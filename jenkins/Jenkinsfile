@@ -19,8 +19,9 @@ pipeline {
         stage('Deliver') {
             steps {
                 bat "%DELIVER_SCRIPT%"
-
             }
+        }
+
        stage('Complete') {
             steps {
                 echo "Job complete"
