@@ -21,12 +21,10 @@ pipeline {
                 bat "%DELIVER_SCRIPT%"
 
             }
-        stage('Complete') {
+       stage('Complete') {
             steps {
-                echo "job complete"
-
+                echo "Job complete"
             }
-        
         }
     }
 }
